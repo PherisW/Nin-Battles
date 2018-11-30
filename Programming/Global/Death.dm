@@ -1,0 +1,11 @@
+mob
+	proc
+		DeathChance()
+Player
+	DeathChance()
+Non_Player
+	DeathChance()
+		del(src)
+Clone
+	DeathChance()
+		del(src)
