@@ -3,14 +3,12 @@ Player
 		ai(var/passive=1)
 			if(Target)
 				if(passive)
-					passive=0
-					attackproc(passive);defenseproc(passive)
+					attackproc(0);defenseproc(0)
 				else
-					if(Target in oview(10,src))
+					if(Target in oview(_range,src))
 						step_towards(src, Target)
 					else
-						passive=1
-						attackproc(passive);defenseproc(passive)
+						attackproc(1);defenseproc(1)
 						src.Target=(null)
 
 					//src.attackproc(Target)
@@ -43,7 +41,7 @@ Player
 						if(get_dist(src,Enemy)<=1)
 							src.Punch(); break
 				spawn(5)
-					src.attackproc(shutdown)
+					src.attackproc()
 			else
 				return
 
@@ -59,6 +57,6 @@ Player
 							//defense dialogue
 							//
 				spawn(5)
-					src.defenseproc(shutdown)
+					src.defenseproc()
 			else
 				return
