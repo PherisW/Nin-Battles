@@ -14,38 +14,6 @@
 
 // BEGIN_FILE_DIR
 #define FILE_DIR .
-#define FILE_DIR "Audio"
-#define FILE_DIR "Audio/Background Music"
-#define FILE_DIR "Audio/Sound Effects"
-#define FILE_DIR "Graphics"
-#define FILE_DIR "Graphics/Artwork"
-#define FILE_DIR "Graphics/FacePic"
-#define FILE_DIR "Graphics/Icon Library"
-#define FILE_DIR "Graphics/Icon Library/Buildings"
-#define FILE_DIR "Graphics/Icon Library/Buildings/Kirigakure"
-#define FILE_DIR "Graphics/Icon Library/Buildings/Konohagakure"
-#define FILE_DIR "Graphics/Icon Library/Buildings/Konohagakure/LeafGate"
-#define FILE_DIR "Graphics/Icon Library/Buildings/Sunagakure"
-#define FILE_DIR "Graphics/Icon Library/Hair"
-#define FILE_DIR "Graphics/Icon Library/Items"
-#define FILE_DIR "Graphics/Icon Library/Items/Clothing"
-#define FILE_DIR "Graphics/Icon Library/Items/Clothing/Headbands"
-#define FILE_DIR "Graphics/Icon Library/Items/Weapons"
-#define FILE_DIR "Graphics/Icon Library/Jutsu"
-#define FILE_DIR "Graphics/Icon Library/Jutsu/skill pack 1"
-#define FILE_DIR "Graphics/Icon Library/Jutsu/skill pack 1/Earth"
-#define FILE_DIR "Graphics/Icon Library/Jutsu/skill pack 1/Fire"
-#define FILE_DIR "Graphics/Icon Library/Jutsu/skill pack 1/Ice"
-#define FILE_DIR "Graphics/Icon Library/Jutsu/skill pack 1/Lava"
-#define FILE_DIR "Graphics/Icon Library/Jutsu/skill pack 1/Lightning"
-#define FILE_DIR "Graphics/Icon Library/Jutsu/skill pack 1/Water"
-#define FILE_DIR "Graphics/Icon Library/Jutsu/skill pack 1/Wind"
-#define FILE_DIR "Graphics/Icon Library/Jutsu/skill pack 1/Wood"
-#define FILE_DIR "Graphics/Icon Library/Misc"
-#define FILE_DIR "Graphics/Icon Library/New"
-#define FILE_DIR "Graphics/Icon Library/NPC"
-#define FILE_DIR "Maps"
-#define FILE_DIR "Maps/Map Icons"
 #define FILE_DIR "Programming"
 #define FILE_DIR "Programming/Assets"
 #define FILE_DIR "Programming/chat from Clan Destined"
@@ -57,16 +25,7 @@
 // END_PREFERENCES
 
 // BEGIN_INCLUDE
-#include <forum_account\keyboard\keyboard.dme>
-#include <forum_account\pixelmovement\pixel-movement.dme>
-#include <forum_account\text\text.dme>
-#include <nullquery\sqlite4dm\sqlite4dm.dme>
-#include "Raiton.dm"
 #include "scripts.dm"
-#include "Suiton.dm"
-#include "Maps\Interiors.dmm"
-#include "Maps\Testmap.dmm"
-#include "Maps\Zbattle.dmm"
 #include "Programming\Resources.dm"
 #include "Programming\Targeting System.dm"
 #include "Programming\Assets\ControlSchemes.dm"
@@ -81,7 +40,6 @@
 #include "Programming\chat from Clan Destined\code\chatbox_gui.dm"
 #include "Programming\chat from Clan Destined\code\chatbox_msg.dm"
 #include "Programming\chat from Clan Destined\code\client.dm"
-#include "Programming\Clan\Clan.dm"
 #include "Programming\Clan\Gaara.dm"
 #include "Programming\Clan\Hyuuga.dm"
 #include "Programming\Clan\Uchiha.dm"
@@ -90,7 +48,6 @@
 #include "Programming\Elemental Jutsus\JutsuCode.dm"
 #include "Programming\Elemental Jutsus\Katon.dm"
 #include "Programming\Elemental Jutsus\minimap grid.dm"
-#include "Programming\Elemental Jutsus\Raiton.dm"
 #include "Programming\Elemental Jutsus\Suiton.dm"
 #include "Programming\Global\Absolute Postitions.dm"
 #include "Programming\Global\AI.dm"
@@ -109,6 +66,5 @@
 #include "Programming\Mechanics\Clothing.dm"
 #include "Programming\Mechanics\Natures.dm"
 #include "Programming\Mechanics\Weapons.dm"
-#include "Skins\testing.dmf"
 // END_INCLUDE
 

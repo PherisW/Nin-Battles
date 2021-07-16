@@ -2,19 +2,19 @@
 /*
 MAP_ZOOM: 0.500
 LAST_COMPILE_TIME: 1543003213
+DIR: Programming Programming\Assets Programming\Elemental Jutsus Programming\Global Programming\Mechanics 
 PACKAGE_RSC_NAME: C:\Users\Brandon\Desktop\Project_Nindo_rsc.zip
-DIR: Graphics Graphics\Icon Library Graphics\Icon Library\Jutsu Graphics\Icon Library\Jutsu\skill pack 1 Graphics\Icon Library\Jutsu\skill pack 1\Earth Programming Programming\Assets Programming\Elemental Jutsus Programming\Global Programming\Mechanics Skins 
 AUTO_FILE_DIR: ON
 PACKAGE_DMB_INFO: ProjectNindo.db
 MAP_ICON_TYPE: 0
 PACKAGE_DME_NAME: C:\Users\Brandon\Documents\DesktopNindo_src.zip
 LAST_COMPILE_VERSION: 512.1454
-PACKAGE_DME_START: 
 PACKAGE_TYPE: 1
+PACKAGE_DME_START: 
+WINDOW: Programming\Elemental Jutsus\Doton.dm;Programming\Elemental Jutsus\Suiton.dm;Programming\Global\World Settings.dm;Programming\Assets\Intro Map.dm;Programming\Mechanics\Clothing.dm;Programming\Global\Absolute Postitions.dm
 PACKAGE_DME_INFO: ProjectNindo.db
-WINDOW: Programming\Elemental Jutsus\Doton.dm;Graphics\Icon Library\Jutsu\skill pack 1\Earth\Earth Mud Bullets.dmi;Programming\Elemental Jutsus\Suiton.dm;Programming\Global\World Settings.dm;Programming\Assets\Intro Map.dm;Programming\Mechanics\Clothing.dm;Programming\Global\Absolute Postitions.dm
 FILE: Programming\Global\Absolute Postitions.dm
-PACKAGE_DME_DEMO: 
 PACKAGE_DMB_NAME: C:\Users\Brandon\Desktop\NindoHost.zip
+PACKAGE_DME_DEMO: 
 */
 // END_INTERNALS

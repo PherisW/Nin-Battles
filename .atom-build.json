@@ -1,0 +1,9 @@
+{
+    "cmd": "G:/games/BYOND/bin/dm.exe",
+    "args": [ "C:/Users/Brandon/github/Nin-Battles/Project_Nindo.dme" ],
+    "sh": false,
+    "errorMatch":
+    [
+        "\n(?<file>[\\\\\/0-9a-zA-Z\\._]+):(?<line>\\d+).*"
+    ]
+}
