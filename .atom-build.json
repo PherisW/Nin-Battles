@@ -1,6 +1,6 @@
 {
     "cmd": "G:/games/BYOND/bin/dm.exe",
-    "args": [ "C:/Users/Brandon/github/Nin-Battles/Project_Nindo.dme" ],
+    "args": [ "G:/games/BYOND/Repos/Nin-Battles/Project_Nindo.dme" ],
     "sh": false,
     "errorMatch":
     [
