@@ -39,7 +39,7 @@ mob/proc/Title_Screen()
 	src << sound('Title Music.ogg',0,0,1,40)
 	var/TitleScreen/Background/Background = new(src)
 
-var/list/PassCode = list/("Heyblinx","Demon Like Ninja","Lil Bop","Louisthe10")
+var/list/PassCode = list("Heyblinx","Demon Like Ninja","Lil Bop","Louisthe10")
 
 Player
 	proc

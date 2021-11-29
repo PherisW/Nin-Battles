@@ -693,7 +693,7 @@ proc
 				digits=0
 		return returnnumber
 	Multi_Hud(var/mob/A,var/Hud/S,wid,high)
-		var/lens = length.icon_states(S.icon)
+		var/lens = length(icon_states(S.icon))
 		var/iconstates = new/list()
 		var/list/maxy = new/list()
 		for(var/texts in icon_states(S.icon))

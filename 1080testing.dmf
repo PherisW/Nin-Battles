@@ -1,0 +1,194 @@
+macro "Default"
+	elem 
+		name = "West+REP"
+		command = "NewWest"
+	elem 
+		name = "North+REP"
+		command = "NewNorth"
+	elem 
+		name = "East+REP"
+		command = "NewEast"
+	elem 
+		name = "South+REP"
+		command = "NewSouth"
+	elem 
+		name = "B"
+		command = "Bag"
+	elem 
+		name = "F"
+		command = "Interact"
+
+
+menu "menu1"
+
+
+window "Backpack"
+	elem "Backpack"
+		type = MAIN
+		pos = 738,0
+		size = 308x430
+		anchor1 = none
+		anchor2 = none
+		background-color = #000000
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+		transparent-color = #000000
+	elem "Bag"
+		type = GRID
+		pos = 24,0
+		size = 256x384
+		anchor1 = 8,0
+		anchor2 = 91,89
+		text-color = #ffffff
+		background-color = #000000
+		saved-params = ""
+		cells = 2x20
+		current-cell = 1,1
+		show-lines = none
+		enable-http-images = true
+		highlight-color = #000000
+
+window "Chat"
+	elem "Chat"
+		type = MAIN
+		pos = 738,0
+		size = 749x146
+		anchor1 = none
+		anchor2 = none
+		background-color = none
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+		image = 'Images\\GFX\\Chat.png'
+	elem "chatoutput"
+		type = LABEL
+		pos = 134,49
+		size = 525x85
+		anchor1 = 18,33
+		anchor2 = 88,92
+		font-size = 3
+		font-style = "bold"
+		background-color = none
+		is-transparent = true
+		saved-params = ""
+		text = ""
+		align = top-left
+		text-wrap = true
+	elem "Name"
+		type = LABEL
+		pos = 7,6
+		size = 727x30
+		anchor1 = 1,4
+		anchor2 = 98,25
+		font-family = "Microsoft Uighur"
+		font-size = 9
+		font-style = "bold underline"
+		text-color = #ffffff
+		background-color = none
+		is-transparent = true
+		saved-params = ""
+		text = ""
+		align = left
+	elem "cbutton"
+		type = BUTTON
+		pos = 674,91
+		size = 60x43
+		anchor1 = 90,63
+		anchor2 = 98,92
+		text-color = #c0c0c0
+		background-color = #000000
+		saved-params = "is-checked"
+		text = "F"
+		command = "Next"
+	elem "cicon"
+		type = GRID
+		pos = 14,49
+		size = 105x85
+		anchor1 = 2,33
+		anchor2 = 16,92
+		background-color = #000000
+		saved-params = ""
+		show-lines = none
+		show-names = false
+		highlight-color = #000000
+
+window "MainMap"
+	elem "MainMap"
+		type = MAIN
+		pos = 738,0
+		size = 1024x720
+		anchor1 = none
+		anchor2 = none
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "map1"
+		type = MAP
+		pos = 0,0
+		size = 1024x720
+		anchor1 = 0,0
+		anchor2 = 100,100
+		saved-params = "zoom;letterbox;zoom-mode"
+
+window "Mainwindow"
+	elem "Mainwindow"
+		type = MAIN
+		pos = 738,0
+		size = 1920x1080
+		anchor1 = none
+		anchor2 = none
+		background-color = none
+		saved-params = "pos;size;is-minimized;is-maximized"
+		title = "Project ALPHA"
+		statusbar = false
+		can-resize = false
+		icon = 'Images\\Icons\\Objects\\Pokeballs.dmi'
+		macro = "Default"
+	elem "Map"
+		type = CHILD
+		pos = 0,0
+		size = 1920x1080
+		anchor1 = 0,0
+		anchor2 = 100,100
+		background-color = none
+		saved-params = "splitter"
+		left = "MainMap"
+		is-vert = false
+	elem "Inventory"
+		type = CHILD
+		pos = 1340,140
+		size = 576x605
+		anchor1 = 70,13
+		anchor2 = 100,69
+		background-color = none
+		is-visible = false
+		border = line
+		saved-params = "splitter"
+		left = "Backpack"
+		is-vert = false
+	elem "Dialouge"
+		type = CHILD
+		pos = 556,803
+		size = 749x146
+		anchor1 = 29,74
+		anchor2 = 68,88
+		background-color = none
+		is-visible = false
+		border = line
+		saved-params = "splitter"
+		left = "Chat"
+		is-vert = false
+

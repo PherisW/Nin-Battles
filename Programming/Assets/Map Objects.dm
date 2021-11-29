@@ -82,7 +82,7 @@ Objects
 				icon_width = text2num(copytext(world.icon_size, 1, p))
 				icon_height = text2num(copytext(world.icon_size, p + 1))
 		Multi_Tile(var/Objects/S,dens=0,layers=S.layer,OverRide=0,override_layers,_x= (null))
-			var/lens = length.icon_states(S.icon)
+			var/lens = length(icon_states(S.icon))
 			var/iconstates = new/list()
 			var/list/maxy = new/list()
 			var/list/maxx = new/list()

@@ -55,10 +55,7 @@ PixelMovement
 				tick_count -= 1000
 
 		movement()
-			for(var/Human/Trainer/m in world)
-				m.check_loc()
-				m.movement(tick_count)
-			for(var/Pokemon/_p in world)
+			for(var/Player/_p in world)
 				_p.check_loc()
 				_p.movement(tick_count)
 

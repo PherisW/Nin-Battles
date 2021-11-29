@@ -1,0 +1,545 @@
+macro "Default"
+	elem 
+		name = "West+REP"
+		command = "NewWest"
+	elem 
+		name = "North+REP"
+		command = "NewNorth"
+	elem 
+		name = "East+REP"
+		command = "NewEast"
+	elem 
+		name = "South+REP"
+		command = "NewSouth"
+	elem 
+		name = "A+REP"
+		command = "NewWest"
+	elem 
+		name = "B"
+		command = "Bag"
+	elem 
+		name = "D+REP"
+		command = "NewEast"
+	elem 
+		name = "F"
+		command = "Interact"
+	elem 
+		name = "S+REP"
+		command = "NewSouth"
+	elem 
+		name = "T"
+		command = "ChatToggle"
+	elem 
+		name = "W+REP"
+		command = "NewNorth"
+
+
+menu "menu1"
+
+
+window "AdminWindow"
+	elem "AdminWindow"
+		type = MAIN
+		pos = 281,0
+		size = 640x480
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = #808080
+		is-visible = false
+		border = sunken
+		saved-params = "pos;size;is-minimized;is-maximized"
+		title = "Admin Window"
+	elem "admininput"
+		type = INPUT
+		pos = 0,460
+		size = 636x20
+		anchor1 = 0,96
+		anchor2 = 99,100
+		background-color = #808080
+		border = line
+		saved-params = ""
+	elem "output1"
+		type = OUTPUT
+		pos = 0,320
+		size = 640x136
+		anchor1 = 0,67
+		anchor2 = 100,95
+		background-color = #808080
+		border = sunken
+		saved-params = "max-lines"
+	elem "AdminTab"
+		type = TAB
+		pos = 0,0
+		size = 640x320
+		anchor1 = 0,0
+		anchor2 = 100,67
+		background-color = #808080
+		border = sunken
+		saved-params = ""
+
+window "Backpack"
+	elem "Backpack"
+		type = MAIN
+		pos = 281,0
+		size = 336x467
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = #000000
+		is-transparent = true
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+		image = 'Images\\GFX\\backpack.png'
+		transparent-color = #000000
+	elem "BagChannel"
+		type = TAB
+		pos = 16,56
+		size = 304x344
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		text-color = #ffffff
+		background-color = #5839ca
+		border = line
+		saved-params = ""
+		tabs = "BagGeneral,BagPokeball,BagKeyItems,BagBerry,BagApparel"
+		current-tab = "BagGeneral"
+		on-tab = "updatebag"
+	elem "label2"
+		type = LABEL
+		pos = 16,400
+		size = 304x48
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		text-color = #ffffff
+		background-color = #5839ca
+		saved-params = ""
+		text = ""
+	elem "label1"
+		type = LABEL
+		pos = 8,12
+		size = 284x28
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		font-size = 8
+		font-style = "bold"
+		text-color = #ffffff
+		is-transparent = true
+		saved-params = ""
+		text = "Inventory"
+
+window "BagGeneral"
+	elem "BagGeneral"
+		type = MAIN
+		pos = 281,0
+		size = 320x320
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		drop-zone = true
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "Inventory"
+		type = MAP
+		pos = 0,0
+		size = 352x352
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		saved-params = "zoom;letterbox;zoom-mode"
+		letterbox = false
+
+window "BagPokeball"
+	elem "BagPokeball"
+		type = MAIN
+		pos = 281,0
+		size = 320x320
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		drop-zone = true
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "Inventory"
+		type = MAP
+		pos = 0,0
+		size = 352x352
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		saved-params = "zoom;letterbox;zoom-mode"
+		letterbox = false
+
+window "Charcreate"
+	elem "Charcreate"
+		type = MAIN
+		pos = 281,0
+		size = 297x720
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		is-visible = false
+		border = line
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-minimize = false
+		can-resize = false
+		image = 'Images\\GFX\\CaC.png'
+		image-mode = center
+	elem "createscreen"
+		type = MAP
+		pos = 16,232
+		size = 264x296
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		is-visible = false
+		saved-params = "zoom;letterbox;zoom-mode"
+	elem "button11"
+		type = BUTTON
+		pos = 64,672
+		size = 24x24
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		saved-params = "is-checked"
+		text = ""
+		image = 'Images\\GFX\\arrowleft.png'
+		command = ""
+	elem "button10"
+		type = BUTTON
+		pos = 64,624
+		size = 24x24
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		saved-params = "is-checked"
+		text = ""
+		image = 'Images\\GFX\\arrowleft.png'
+		command = ""
+	elem "button9"
+		type = BUTTON
+		pos = 64,584
+		size = 24x24
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		saved-params = "is-checked"
+		text = ""
+		image = 'Images\\GFX\\arrowleft.png'
+		command = ""
+	elem "button8"
+		type = BUTTON
+		pos = 64,536
+		size = 24x24
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		saved-params = "is-checked"
+		text = ""
+		image = 'Images\\GFX\\arrowleft.png'
+		command = ""
+	elem "button7"
+		type = BUTTON
+		pos = 200,672
+		size = 24x24
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		saved-params = "is-checked"
+		text = ""
+		image = 'Images\\GFX\\arrowright.png'
+		command = ""
+	elem "button6"
+		type = BUTTON
+		pos = 200,624
+		size = 24x24
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		saved-params = "is-checked"
+		text = ""
+		image = 'Images\\GFX\\arrowright.png'
+		command = ""
+	elem "button5"
+		type = BUTTON
+		pos = 200,584
+		size = 24x24
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		saved-params = "is-checked"
+		text = ""
+		image = 'Images\\GFX\\arrowright.png'
+		command = ""
+	elem "button4"
+		type = BUTTON
+		pos = 200,536
+		size = 24x24
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		saved-params = "is-checked"
+		text = ""
+		image = 'Images\\GFX\\arrowright.png'
+		command = ""
+	elem "Femalebutton"
+		type = BUTTON
+		pos = 233,480
+		size = 47x48
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		saved-params = "is-checked"
+		text = ""
+		image = 'Images\\GFX\\femalebutton.png'
+		command = ""
+	elem "button3"
+		type = BUTTON
+		pos = 17,480
+		size = 47x48
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		saved-params = "is-checked"
+		text = ""
+		image = 'Images\\GFX\\Malebutton.png'
+		command = ""
+	elem "TextName"
+		type = INPUT
+		pos = 32,144
+		size = 224x24
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = #b5d0d9
+		saved-params = ""
+	elem "button2"
+		type = BUTTON
+		pos = 240,656
+		size = 47x48
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		saved-params = "is-checked"
+		text = ""
+		image = 'Images\\GFX\\OKbutton.png'
+		command = ""
+
+window "Chat"
+	elem "Chat"
+		type = MAIN
+		pos = 372,0
+		size = 400x96
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+		image = 'Images\\GFX\\Chat.png'
+	elem "chatoutput"
+		type = LABEL
+		pos = 72,32
+		size = 280x56
+		anchor1 = 18,33
+		anchor2 = 88,92
+		font-size = 4
+		font-style = "bold"
+		is-transparent = true
+		saved-params = ""
+		text = ""
+		align = top-left
+		text-wrap = true
+	elem "Name"
+		type = LABEL
+		pos = 4,4
+		size = 388x20
+		anchor1 = 1,4
+		anchor2 = 98,25
+		font-family = "Microsoft Uighur"
+		font-size = 9
+		font-style = "bold underline"
+		text-color = #ffffff
+		is-transparent = true
+		saved-params = ""
+		text = ""
+		align = left
+	elem "cbutton"
+		type = BUTTON
+		pos = 360,60
+		size = 32x28
+		anchor1 = 90,63
+		anchor2 = 98,92
+		text-color = #c0c0c0
+		background-color = #000000
+		saved-params = "is-checked"
+		text = "F"
+		command = "Next"
+	elem "cicon"
+		type = GRID
+		pos = 8,32
+		size = 56x56
+		anchor1 = 2,33
+		anchor2 = 16,92
+		background-color = #000000
+		saved-params = ""
+		show-lines = none
+		show-names = false
+		highlight-color = #000000
+
+window "MainMap"
+	elem "MainMap"
+		type = MAIN
+		pos = 372,0
+		size = 1024x720
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = none
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+		outer-size = 1040x736
+		inner-size = 1024x720
+	elem "map1"
+		type = MAP
+		pos = 0,0
+		size = 1024x720
+		anchor1 = 0,0
+		anchor2 = 100,100
+		is-default = true
+		saved-params = "zoom;letterbox;zoom-mode"
+
+window "Mainwindow"
+	elem "Mainwindow"
+		type = MAIN
+		pos = 372,0
+		size = 1080x736
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = none
+		saved-params = "pos;size;is-minimized;is-maximized"
+		title = "Project ALPHA"
+		statusbar = false
+		can-resize = false
+		macro = "Default"
+		outer-size = 1098x783
+		inner-size = 1080x736
+	elem "Dialouge"
+		type = CHILD
+		pos = 313,548
+		size = 421x98
+		anchor1 = 29,74
+		anchor2 = 68,88
+		background-color = none
+		is-visible = false
+		border = line
+		saved-params = "splitter"
+		left = "Chat"
+		is-vert = false
+	elem "Map"
+		type = CHILD
+		pos = 0,0
+		size = 1080x736
+		anchor1 = 0,0
+		anchor2 = 100,100
+		background-color = none
+		saved-params = "splitter"
+		left = "MainMap"
+		is-vert = false
+	elem "Inv"
+		type = CHILD
+		pos = 744,173
+		size = 336x467
+		anchor1 = 70,13
+		anchor2 = 100,69
+		background-color = none
+		is-visible = false
+		border = line
+		saved-params = "splitter"
+		left = "Backpack"
+		is-vert = false
+	elem "Textbox"
+		type = CHILD
+		pos = 24,703
+		size = 320x25
+		anchor1 = 1,96
+		anchor2 = 30,99
+		background-color = none
+		is-visible = false
+		saved-params = "splitter"
+		left = "input1"
+		is-vert = false
+
+window "Pokedex"
+	elem "Pokedex"
+		type = MAIN
+		pos = 281,0
+		size = 640x480
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+
+window "input1"
+	elem "input1"
+		type = MAIN
+		pos = 372,0
+		size = 320x24
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = #000000
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		title = "input1"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "button1"
+		type = BUTTON
+		pos = 0,0
+		size = 48x20
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		text-color = #ff8000
+		background-color = #c0c0c0
+		saved-params = "is-checked"
+		text = "World"
+		command = ""
+	elem "input2"
+		type = INPUT
+		pos = 56,0
+		size = 256x20
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		text-color = #808080
+		background-color = #000000
+		saved-params = ""
+		command = "WorldChat"
+
+window "window1"
+	elem "window1"
+		type = MAIN
+		pos = 281,0
+		size = 378x445
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		saved-params = "pos;size;is-minimized;is-maximized"
+
+window "window2"
+	elem "window2"
+		type = MAIN
+		pos = 281,0
+		size = 640x480
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+

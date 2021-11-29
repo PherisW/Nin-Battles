@@ -25,7 +25,7 @@
 /sql4dm/DatabaseConnection/var/database
 /sql4dm/DatabaseConnection/var/dbtype
 
-/sql4dm/DatabaseConnection/New(hostname, port, username, password, database)
+/* sql4dm/DatabaseConnection/New(hostname, port, username, password, database)
 	src.hostname = "https://data.atlasserver.us"
 	src.port     = 3307
 	src.username = 'Pokemondb'
@@ -33,7 +33,7 @@
 	src.database = Pokemondb
 
 	return ..();
-
+*/
 /sql4dm/DatabaseConnection/Del()
 	src.Dispose()
 
