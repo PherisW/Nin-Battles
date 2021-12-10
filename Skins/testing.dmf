@@ -1,0 +1,463 @@
+macro "Default"
+	elem 
+		name = "Tab"
+		command = "TargetCycle"
+	elem 
+		name = "Space"
+		command = "Interact"
+	elem 
+		name = "West"
+		command = "MoveWest"
+	elem 
+		name = "West+UP"
+		command = "StopWest"
+	elem 
+		name = "North"
+		command = "MoveNorth"
+	elem 
+		name = "North+UP"
+		command = "StopNorth"
+	elem 
+		name = "East"
+		command = "MoveEast"
+	elem 
+		name = "East+UP"
+		command = "StopEast"
+	elem 
+		name = "South"
+		command = "MoveSouth"
+	elem 
+		name = "South+UP"
+		command = "StopSouth"
+	elem 
+		name = "1"
+		command = "Hotkey 1"
+	elem 
+		name = "2"
+		command = "Hotkey 2"
+	elem 
+		name = "3"
+		command = "Hotkey 3"
+	elem 
+		name = "4"
+		command = "Hotkey 4"
+	elem 
+		name = "5"
+		command = "Hotkey 5"
+	elem 
+		name = "A"
+		command = "MoveWest"
+	elem 
+		name = "A+UP"
+		command = "StopWest"
+	elem 
+		name = "B"
+		command = "BagOpens"
+	elem 
+		name = "D"
+		command = "MoveEast"
+	elem 
+		name = "D+UP"
+		command = "StopEast"
+	elem 
+		name = "F"
+		command = "Light-Punch"
+	elem 
+		name = "G"
+		command = "Med-Punch"
+	elem 
+		name = "S"
+		command = "MoveSouth"
+	elem 
+		name = "S+UP"
+		command = "StopSouth"
+	elem 
+		name = "T"
+		command = "ChatToggle"
+	elem 
+		name = "W"
+		command = "MoveNorth"
+	elem 
+		name = "W+UP"
+		command = "StopNorth"
+	elem 
+		name = "Numpad1"
+		command = "Hotkey 1"
+	elem 
+		name = "Numpad2"
+		command = "Hotkey 2"
+	elem 
+		name = "Numpad3"
+		command = "Hotkey 3"
+	elem 
+		name = "Numpad4"
+		command = "Hotkey 4"
+	elem 
+		name = "Numpad5"
+		command = "Hotkey 5"
+	elem 
+		name = "F3+UP"
+		command = "Open-World"
+	elem 
+		name = "F4+UP"
+		command = "Reset-Graphics"
+	elem 
+		name = "F5"
+		command = "Toggle-Fullscreen"
+	elem 
+		name = "GamepadFace1"
+		map-to = "F"
+
+
+menu "menu1"
+
+
+window "Backpack"
+	elem "Backpack"
+		type = MAIN
+		pos = 418,0
+		size = 308x430
+		anchor1 = none
+		anchor2 = none
+		background-color = #000000
+		saved-params = "pos;size;is-minimized;is-maximized"
+		title = "Backpack"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "SubLeft"
+		type = BUTTON
+		pos = 4,56
+		size = 20x24
+		anchor1 = 1,13
+		anchor2 = 8,19
+		text-color = #c0c0c0
+		background-color = #000000
+		border = sunken
+		saved-params = "is-checked"
+		text = "<"
+		command = ""
+	elem "SubRight"
+		type = BUTTON
+		pos = 280,56
+		size = 20x24
+		anchor1 = 91,13
+		anchor2 = 97,19
+		text-color = #c0c0c0
+		background-color = #000000
+		saved-params = "is-checked"
+		text = ">"
+		command = ""
+	elem "label4"
+		type = LABEL
+		pos = 24,56
+		size = 256x24
+		anchor1 = 8,13
+		anchor2 = 91,19
+		text-color = #c0c0c0
+		background-color = #000000
+		is-transparent = true
+		border = sunken
+		saved-params = ""
+		text = "Clothing"
+	elem "ItemText"
+		type = LABEL
+		pos = 8,388
+		size = 288x36
+		anchor1 = 3,90
+		anchor2 = 96,99
+		font-family = "@FangSong"
+		font-size = 8
+		text-color = #c0c0c0
+		background-color = #000000
+		border = sunken
+		saved-params = ""
+		text = "Item Name: Description of the item"
+		align = top-left
+		text-wrap = true
+	elem "Backpack"
+		type = MAP
+		pos = 16,88
+		size = 272x296
+		anchor1 = 5,20
+		anchor2 = 94,89
+		border = sunken
+		right-click = true
+		saved-params = "zoom;letterbox;zoom-mode"
+	elem "InvLeft"
+		type = BUTTON
+		pos = 0,0
+		size = 16x48
+		anchor1 = 0,0
+		anchor2 = 5,11
+		text-color = #c0c0c0
+		background-color = #000000
+		border = sunken
+		saved-params = "is-checked"
+		text = "<"
+		command = ""
+	elem "label1"
+		type = LABEL
+		pos = 16,0
+		size = 280x48
+		anchor1 = 5,0
+		anchor2 = 96,11
+		font-size = 8
+		font-style = "bold"
+		text-color = #c0c0c0
+		background-color = #000000
+		border = sunken
+		saved-params = ""
+		text = "Inventory"
+		image-mode = stretch
+	elem "InvRight"
+		type = BUTTON
+		pos = 288,0
+		size = 24x48
+		anchor1 = 94,0
+		anchor2 = 100,11
+		text-color = #c0c0c0
+		background-color = #000000
+		border = sunken
+		saved-params = "is-checked"
+		text = ">"
+		command = "CategorySwitch \"Main\""
+
+window "CharacterSheet"
+	elem "CharacterSheet"
+		type = MAIN
+		pos = 418,0
+		size = 308x430
+		anchor1 = none
+		anchor2 = none
+		background-color = #000000
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "button3"
+		type = BUTTON
+		pos = 280,0
+		size = 24x24
+		anchor1 = 91,0
+		anchor2 = 99,6
+		saved-params = "is-checked"
+		text = ""
+		command = ""
+	elem "child3"
+		type = CHILD
+		pos = 160,216
+		size = 148x216
+		anchor1 = 52,50
+		anchor2 = 100,100
+		saved-params = "splitter"
+		is-vert = false
+	elem "child2"
+		type = CHILD
+		pos = 160,24
+		size = 148x200
+		anchor1 = none
+		anchor2 = none
+		saved-params = "splitter"
+		is-vert = false
+	elem "label6"
+		type = LABEL
+		pos = 0,224
+		size = 160x208
+		anchor1 = 0,52
+		anchor2 = 52,100
+		saved-params = ""
+		text = ""
+	elem "child1"
+		type = CHILD
+		pos = 0,24
+		size = 160x200
+		anchor1 = 0,6
+		anchor2 = 52,52
+		saved-params = "splitter"
+		is-vert = false
+	elem "label5"
+		type = LABEL
+		pos = 0,0
+		size = 280x24
+		anchor1 = 0,0
+		anchor2 = 91,6
+		text-color = #ffff00
+		is-transparent = true
+		saved-params = ""
+		text = "Pheris, The Red Gale"
+
+window "MainMap"
+	elem "MainMap"
+		type = MAIN
+		pos = 418,0
+		size = 1024x720
+		anchor1 = none
+		anchor2 = none
+		background-color = none
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "map1"
+		type = MAP
+		pos = 0,0
+		size = 1024x720
+		anchor1 = 0,0
+		anchor2 = 100,100
+		is-default = true
+		right-click = true
+		saved-params = "zoom;letterbox;zoom-mode"
+		style = "<style = \"font-family:courier;\">"
+
+window "Mainwindow"
+	elem "Mainwindow"
+		type = MAIN
+		pos = 418,0
+		size = 1028x736
+		anchor1 = none
+		anchor2 = none
+		background-color = #696969
+		saved-params = "pos;size;is-minimized;is-maximized"
+		title = "Dawn of the Shinobi V3"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		icon = 'Graphics\\Artwork\\title.png'
+		image-mode = center
+		keep-aspect = true
+		macro = "Default"
+		on-close = ".quit"
+	elem "Map"
+		type = CHILD
+		pos = 8,8
+		size = 1016x720
+		anchor1 = 1,1
+		anchor2 = 100,99
+		background-color = none
+		saved-params = "splitter"
+		left = "MainMap"
+		is-vert = false
+	elem "button2"
+		type = BUTTON
+		pos = 968,8
+		size = 24x16
+		anchor1 = 94,1
+		anchor2 = 96,3
+		font-family = "@FangSong"
+		font-size = 12
+		font-style = "bold"
+		text-color = #c0c0c0
+		background-color = #3a3939
+		saved-params = "is-checked"
+		text = "-"
+		command = ".winset \"Mainwindow.is-minimized=\"true\"\""
+		is-flat = true
+	elem "CharacterSheet"
+		type = CHILD
+		pos = 32,80
+		size = 309x436
+		anchor1 = 3,11
+		anchor2 = 33,70
+		background-color = none
+		is-visible = false
+		border = line
+		saved-params = "splitter"
+		left = "CharacterSheet"
+		is-vert = false
+	elem "button1"
+		type = BUTTON
+		pos = 1000,8
+		size = 24x16
+		anchor1 = 97,1
+		anchor2 = 100,3
+		font-style = "bold"
+		text-color = #c0c0c0
+		background-color = #3a3939
+		saved-params = "is-checked"
+		text = "X"
+		command = ".quit"
+		is-flat = true
+	elem "Dialouge"
+		type = CHILD
+		pos = 176,600
+		size = 401x104
+		anchor1 = 60,83
+		anchor2 = 99,97
+		background-color = none
+		is-visible = false
+		border = line
+		saved-params = "splitter"
+		left = "Chat"
+		is-vert = false
+	elem "Inventory"
+		type = CHILD
+		pos = 696,244
+		size = 309x436
+		anchor1 = 68,11
+		anchor2 = 98,70
+		background-color = none
+		is-visible = false
+		border = line
+		saved-params = "splitter"
+		left = "Backpack"
+		is-vert = false
+	elem "Textbox2"
+		type = CHILD
+		pos = 40,680
+		size = 256x24
+		anchor1 = 4,92
+		anchor2 = 29,96
+		background-color = none
+		is-visible = false
+		saved-params = "splitter"
+		left = "texts"
+		is-vert = false
+
+window "texts"
+	elem "texts"
+		type = MAIN
+		pos = 418,0
+		size = 256x24
+		anchor1 = none
+		anchor2 = none
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "input2"
+		type = INPUT
+		pos = 0,0
+		size = 256x24
+		anchor1 = 0,0
+		anchor2 = 100,100
+		text-color = #ffffff
+		background-color = #000000
+		saved-params = ""
+		command = "worldsay"
+
+window "window1"
+	elem "window1"
+		type = MAIN
+		pos = 418,0
+		size = 640x480
+		anchor1 = none
+		anchor2 = none
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+

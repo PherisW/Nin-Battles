@@ -1,0 +1,99 @@
+macro "macro"
+	elem 
+		name = "Tab"
+		command = "TargetCycle"
+	elem 
+		name = "Center+REP"
+		command = ".center"
+	elem 
+		name = "Northeast+REP"
+		command = ".northeast"
+	elem 
+		name = "Southeast+REP"
+		command = ".southeast"
+	elem 
+		name = "Southwest+REP"
+		command = ".southwest"
+	elem 
+		name = "Northwest+REP"
+		command = ".northwest"
+	elem 
+		name = "West+REP"
+		command = "NewWest"
+	elem 
+		name = "North+REP"
+		command = "NewNorth"
+	elem 
+		name = "East+REP"
+		command = "NewEast"
+	elem 
+		name = "South+REP"
+		command = "NewSouth"
+	elem 
+		name = "1"
+		command = "Hotkey 1"
+	elem 
+		name = "2"
+		command = "Hotkey 2"
+	elem 
+		name = "3"
+		command = "Hotkey 3"
+	elem 
+		name = "4"
+		command = "Hotkey 4"
+	elem 
+		name = "A"
+		command = "Light-Punch"
+	elem 
+		name = "F"
+		command = "Interact"
+	elem 
+		name = "S"
+		command = "Med-Punch"
+
+
+menu "menu"
+	elem 
+		name = "&Quit"
+		command = ".quit"
+		category = "&File"
+		saved-params = "is-checked"
+
+
+window "default"
+	elem "default"
+		type = MAIN
+		pos = 281,0
+		size = 880x480
+		anchor1 = none
+		anchor2 = none
+		background-color = #ff8000
+		is-default = true
+		saved-params = "pos;size;is-minimized;is-maximized"
+		macro = "macro"
+		menu = "menu"
+	elem "input1"
+		type = INPUT
+		pos = 640,460
+		size = 240x20
+		anchor1 = 73,95
+		anchor2 = 100,99
+		saved-params = ""
+		command = "say"
+	elem "output1"
+		type = OUTPUT
+		pos = 640,0
+		size = 240x456
+		anchor1 = 73,0
+		anchor2 = 100,95
+		is-default = true
+		saved-params = "max-lines"
+	elem "map1"
+		type = MAP
+		pos = 0,0
+		size = 640x480
+		anchor1 = 0,0
+		anchor2 = 73,100
+		text-color = none
+		saved-params = "icon-size"
+

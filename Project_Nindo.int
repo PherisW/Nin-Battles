@@ -1,19 +1,19 @@
 // BEGIN_INTERNALS
 /*
 MAP_ZOOM: 0.500
-LAST_COMPILE_TIME: 1638203758
+LAST_COMPILE_TIME: 1638389149
 DIR: Programming Programming\Assets Programming\Assets\Library Programming\Assets\Library\keyboard Programming\Assets\Library\Pixelmovement Programming\Elemental Jutsus Programming\Global Programming\Mechanics 
 PACKAGE_RSC_NAME: C:\Users\Brandon\Desktop\Project_Nindo_rsc.zip
 AUTO_FILE_DIR: ON
 PACKAGE_DMB_INFO: ProjectNindo.db
 MAP_ICON_TYPE: 0
 PACKAGE_DME_NAME: C:\Users\Brandon\Documents\DesktopNindo_src.zip
-LAST_COMPILE_VERSION: 514.1571
+LAST_COMPILE_VERSION: 513.1542
 PACKAGE_TYPE: 1
 PACKAGE_DME_START: 
-WINDOW: Programming\Elemental Jutsus\Doton.dm;Programming\Elemental Jutsus\Suiton.dm;Programming\Global\World Settings.dm;Programming\Assets\Intro Map.dm;Programming\Mechanics\Clothing.dm;Programming\Global\Absolute Postitions.dm;Programming\Global\Procs.dm;testing.dmf;Programming\Elemental Jutsus\minimap grid.dm
+WINDOW: Programming\Elemental Jutsus\Doton.dm;Programming\Elemental Jutsus\Suiton.dm;Programming\Global\World Settings.dm;Programming\Assets\Intro Map.dm;Programming\Mechanics\Clothing.dm;Programming\Global\Absolute Postitions.dm;Programming\Global\Procs.dm;1080testing.dmf
 PACKAGE_DME_INFO: ProjectNindo.db
-FILE: Programming\Global\Procs.dm
+FILE: 1080testing.dmf
 PACKAGE_DMB_NAME: C:\Users\Brandon\Desktop\NindoHost.zip
 PACKAGE_DME_DEMO: 
 */

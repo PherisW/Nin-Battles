@@ -1,0 +1,97 @@
+"a" = (/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/area/Weather/Night)
+"b" = (/Objects/Misc/Fence_Log{tag = "icon-logfence left corner"; icon_state = "logfence left corner"},/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/area/Weather/Night)
+"c" = (/Objects/Misc/Fence_Log{tag = "icon-logfence middle"; icon_state = "logfence middle"},/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/area/Weather/Night)
+"d" = (/Objects/Misc/Fence_Log{tag = "icon-logfence right corner"; icon_state = "logfence right corner"},/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/area/Weather/Night)
+"e" = (/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/area)
+"f" = (/Objects/Misc/Fence_Log{tag = "icon-logfence left corner up"; icon_state = "logfence left corner up"},/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/area/Weather/Night)
+"g" = (/Objects/Misc/Fence_Log{tag = "icon-logfence right corner up"; icon_state = "logfence right corner up"},/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/area/Weather/Night)
+"h" = (/Objects/Misc/Fence_Log{tag = "icon-logfence left corner up"; icon_state = "logfence left corner up"},/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/area)
+"i" = (/Objects/Misc/Fence_Log{tag = "icon-logfence right corner up"; icon_state = "logfence right corner up"},/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/area)
+"j" = (/Objects/Misc/Fence_Log{tag = "icon-logfence left corner"; icon_state = "logfence left corner"},/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/area)
+"k" = (/Objects/Misc/Fence_Log{tag = "icon-logfence middle"; icon_state = "logfence middle"},/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/area)
+"l" = (/Objects/Misc/Fence_Log{tag = "icon-logfence right corner"; icon_state = "logfence right corner"},/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/area)
+"m" = (/Turfs/grass{tag = "icon-0,0"; icon_state = "0,0"},/area/Weather/Night)
+"n" = (/Turfs/Water,/Turfs/grass{tag = "icon-1,0"; icon_state = "1,0"},/area/Weather/Night)
+"o" = (/Turfs/Water,/Turfs/grass{tag = "icon-2,1"; icon_state = "2,1"},/area/Weather/Night)
+"p" = (/Turfs/Water,/Turfs/grass{tag = "icon-gass"; icon_state = "gass"},/area/Weather/Night)
+"q" = (/Turfs/Water,/Turfs/grass{tag = "icon-1,2"; icon_state = "1,2"},/area/Weather/Night)
+"r" = (/Turfs/Water,/Turfs/grass{tag = "icon-2,2"; icon_state = "2,2"},/area/Weather/Night)
+"s" = (/Turfs/Water,/area/Weather/Night)
+"t" = (/Turfs/Water,/Turfs/grass{tag = "icon-0,1"; icon_state = "0,1"},/area/Weather/Night)
+"u" = (/Turfs/grass{tag = "icon-0,2"; icon_state = "0,2"},/area/Weather/Night)
+"v" = (/Turfs/Water,/Turfs/grass{tag = "icon-grass"; icon_state = "grass"},/area/Weather/Night)
+"w" = (/Turfs/Water,/Turfs/grass{tag = "icon-2,0"; icon_state = "2,0"},/area/Weather/Night)
+"x" = (/Turfs/Water,/Turfs/Sand{tag = "icon-0,2"; icon_state = "0,2"},/area/Weather/Night)
+"y" = (/Turfs/Water,/Turfs/Sand{tag = "icon-1,2"; icon_state = "1,2"},/area/Weather/Night)
+"z" = (/Turfs/Water,/Turfs/Sand{tag = "icon-2,2"; icon_state = "2,2"},/area/Weather/Night)
+"A" = (/Turfs/Water,/Turfs/Sand{tag = "icon-0,1"; icon_state = "0,1"},/area/Weather/Night)
+"B" = (/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/Turfs/grass{tag = "icon-gass"; icon_state = "gass"},/area/Weather/Night)
+"C" = (/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/Turfs/grass{tag = "icon-1,2"; icon_state = "1,2"},/area/Weather/Night)
+"D" = (/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/Turfs/grass{tag = "icon-2,2"; icon_state = "2,2"},/area/Weather/Night)
+"E" = (/Turfs/Water,/Turfs/Sand{tag = "icon-2,1"; icon_state = "2,1"},/area/Weather/Night)
+"F" = (/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/Turfs/grass{tag = "icon-0,1"; icon_state = "0,1"},/area/Weather/Night)
+"G" = (/Turfs/grass,/area/Weather/Night)
+"H" = (/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/Turfs/grass{tag = "icon-2,1"; icon_state = "2,1"},/area/Weather/Night)
+"I" = (/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/Turfs/grass{tag = "icon-grass"; icon_state = "grass"},/area/Weather/Night)
+"J" = (/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/Turfs/grass{tag = "icon-1,0"; icon_state = "1,0"},/area/Weather/Night)
+"K" = (/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/Turfs/grass{tag = "icon-2,0"; icon_state = "2,0"},/area/Weather/Night)
+"L" = (/Turfs/Water,/Turfs/Sand{tag = "icon-0,0"; icon_state = "0,0"},/area/Weather/Night)
+"M" = (/Turfs/Water,/Turfs/Sand{tag = "icon-1,0"; icon_state = "1,0"},/area/Weather/Night)
+"N" = (/Turfs/Water,/Turfs/Sand{tag = "icon-2,0"; icon_state = "2,0"},/area/Weather/Night)
+"O" = (/Turfs/Water,/area)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaa
+aabccccccccccccccccccdaea
+aafaaaaaaaaaaaaaaaaaagaaa
+aafaaaaaaaaaaaaaaaaaagaaa
+aafaaaaaaaaaaaaaaaaaagaaa
+aaheeeeeeeeeeeeeeeeeageaa
+aafaaaaaaaaaaaaaaaeeageaa
+aafaaaaaaaaaaaaaaaeeageaa
+aafaaaaaaaaaaaaaaaeeageaa
+aeheeeeeeeeeeeeeeeeeeieee
+aeheeeeeeeeeeeeeeeeeeieee
+aeheeeeeeeeeeeeeeeeeeieee
+aeheeeeeeeeeeeeeeeeeeieee
+aeheeeeeeeeeeeeeeeeeeieee
+aeheeeeeeeeeeeeeeeeeeieee
+aeheeeeeeeeeeeeeeeeeeieee
+aeheeeeeeeeeeeeeeeeeeieee
+aeheeeeeeeeeeeeeeeeeeieee
+aeheeeeeeeeeeeeeeeeeeieee
+aeheeeeeeeeeeeeeeeeeeieee
+aeheeeeeeeeeeeeeeeeeeieee
+aeheeeeeeeeeeeeeeeeeeieee
+aeheeeeeeeeeeeeeeeeeeieee
+aejkkkkkkkkkkkkkkkkkkleee
+aeeeeeeeeeeeeeeeeeeeeeeee
+"}
+
+(1,1,2) = {"
+mnnnnnnnnnnnnnnnnnnnnnnnm
+opqrssssssssssssssssspqrt
+otuossssssssssssssssstuot
+ovnwsssssssssssssssssvnwt
+ossssssssssssssssssssssst
+ossssssssssssssssssssssst
+ossssssssssssssssssssssst
+ossssssssxyyyyyyzssssssst
+ossssssssABCCCCDEssssssst
+ossssssssAFGGGGHEssssssst
+ossssssssAFGGGGHEssssssst
+ossssssssAFGGGGHEssssssst
+ossssssssAFGGGGHEssssssst
+ossssssssAIJJJJKEssssssst
+ossssssssLMMMMMMNssssssst
+ossssssssssssssssssssssst
+ossssssssssssssssssssssst
+ossssOOOsssssssssssssssst
+ossssOOOsssssssssssssssst
+ossssOOOsssssssssssssssst
+ossssssssssssssssssssssst
+opqrssssssssssssssssspqrt
+otuossssssssssssssssstuot
+ovnwsssssssssssssssssvnwt
+mqqqqqqqqqqqqqqqqqqqqqqqm
+"}

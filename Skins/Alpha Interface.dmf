@@ -1,0 +1,121 @@
+macro "macro"
+	elem 
+		name = "Center+REP"
+		command = ".center"
+	elem 
+		name = "Return"
+		command = "Say"
+	elem 
+		name = "Northeast+REP"
+		command = ".northeast"
+	elem 
+		name = "Southeast+REP"
+		command = ".southeast"
+	elem 
+		name = "Southwest+REP"
+		command = ".southwest"
+	elem 
+		name = "Northwest+REP"
+		command = ".northwest"
+	elem 
+		name = "West+REP"
+		command = "NewWest"
+	elem 
+		name = "North+REP"
+		command = "NewNorth"
+	elem 
+		name = "East+REP"
+		command = "NewEast"
+	elem 
+		name = "South+REP"
+		command = "NewSouth"
+	elem 
+		name = "1"
+		command = "Hotkey 1"
+	elem 
+		name = "2"
+		command = "Hotkey 2"
+	elem 
+		name = "3"
+		command = "Hotkey 3"
+	elem 
+		name = "A+REP"
+		command = "NewWest"
+	elem 
+		name = "D+REP"
+		command = "NewEast"
+	elem 
+		name = "S+REP"
+		command = "NewSouth"
+	elem 
+		name = "W+REP"
+		command = "NewNorth"
+
+
+menu "menu1"
+	elem 
+		name = "File"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "Quit"
+		command = ".quit"
+		category = "File"
+		saved-params = "is-checked"
+
+
+window "Login"
+	elem "Login"
+		type = MAIN
+		pos = 293,0
+		size = 1280x720
+		anchor1 = none
+		anchor2 = none
+		background-color = none
+		saved-params = "pos;size;is-minimized;is-maximized"
+
+window "default"
+	elem "default"
+		type = MAIN
+		pos = 418,0
+		size = 1280x720
+		anchor1 = none
+		anchor2 = none
+		background-color = none
+		is-default = true
+		saved-params = "pos;size;is-minimized;is-maximized"
+		title = "Project Nindo"
+		statusbar = false
+		macro = "macro"
+		menu = "menu1"
+	elem "Infos"
+		type = CHILD
+		pos = 920,0
+		size = 360x720
+		anchor1 = none
+		anchor2 = none
+		background-color = none
+		is-default = true
+		saved-params = "splitter"
+		is-vert = false
+	elem "Map"
+		type = CHILD
+		pos = 0,0
+		size = 920x720
+		anchor1 = none
+		anchor2 = none
+		background-color = none
+		is-default = true
+		saved-params = "splitter"
+		is-vert = false
+	elem "Login"
+		type = CHILD
+		pos = 0,0
+		size = 1280x720
+		anchor1 = none
+		anchor2 = none
+		background-color = #000000
+		is-default = true
+		saved-params = "splitter"
+		is-vert = false
+

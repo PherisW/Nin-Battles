@@ -15,7 +15,7 @@ world
 	New()
 		..()
 		spawn(30)
-			TPixelGet1(1)
+			TPixelGet1(0)
 proc
 	TPixelGet1(bypass=0)//Call at world New(), This a minimap of all maps
 		set waitfor=FALSE
@@ -207,6 +207,7 @@ proc//Saving and loading so you dont have to recreate the entire world maps each
 			//_message(world,"Map Log","World MiniMap Loaded","red",,"red")
 			//world<<"World MiniMap Loaded"
 			wholemap=l
+			created=1
 			return 1
 		else
 			return 0

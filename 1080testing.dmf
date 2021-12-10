@@ -60,7 +60,6 @@ window "Chat"
 		size = 749x146
 		anchor1 = none
 		anchor2 = none
-		background-color = none
 		saved-params = "pos;size;is-minimized;is-maximized"
 		titlebar = false
 		statusbar = false
@@ -77,7 +76,6 @@ window "Chat"
 		anchor2 = 88,92
 		font-size = 3
 		font-style = "bold"
-		background-color = none
 		is-transparent = true
 		saved-params = ""
 		text = ""
@@ -93,7 +91,6 @@ window "Chat"
 		font-size = 9
 		font-style = "bold underline"
 		text-color = #ffffff
-		background-color = none
 		is-transparent = true
 		saved-params = ""
 		text = ""
@@ -124,10 +121,11 @@ window "Chat"
 window "MainMap"
 	elem "MainMap"
 		type = MAIN
-		pos = 738,0
+		pos = 281,0
 		size = 1024x720
 		anchor1 = none
 		anchor2 = none
+		background-color = none
 		saved-params = "pos;size;is-minimized;is-maximized"
 		titlebar = false
 		statusbar = false
@@ -135,19 +133,22 @@ window "MainMap"
 		can-minimize = false
 		can-resize = false
 		is-pane = true
+		outer-size = 1038x734
+		inner-size = 1024x720
 	elem "map1"
 		type = MAP
 		pos = 0,0
 		size = 1024x720
 		anchor1 = 0,0
 		anchor2 = 100,100
+		is-default = true
 		saved-params = "zoom;letterbox;zoom-mode"
 
 window "Mainwindow"
 	elem "Mainwindow"
 		type = MAIN
-		pos = 738,0
-		size = 1920x1080
+		pos = 0,0
+		size = 1904x1041
 		anchor1 = none
 		anchor2 = none
 		background-color = none
@@ -155,8 +156,9 @@ window "Mainwindow"
 		title = "Project ALPHA"
 		statusbar = false
 		can-resize = false
-		icon = 'Images\\Icons\\Objects\\Pokeballs.dmi'
 		macro = "Default"
+		outer-size = 1920x1080
+		inner-size = 1904x1041
 	elem "Map"
 		type = CHILD
 		pos = 0,0
