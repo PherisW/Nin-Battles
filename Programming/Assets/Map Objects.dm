@@ -583,6 +583,8 @@ MapTools
 			layer = 6
 		Floor_Turf
 			icon = 'flooring.dmi'
+		Turfs
+			icon = 'flooring.dmi'
 
 	Connectors
 		alpha=0

@@ -1,5 +1,5 @@
-"a" = (/Turfs/Walls{tag = "icon-brick 1"; icon_state = "brick 1"},/area)
-"b" = (/Turfs/Floor{tag = "icon-floorboards 2"; icon_state = "floorboards 2"},/area)
+"a" = (/MapTools/Turfs/Walls{tag = "icon-brick 1"; icon_state = "brick 1"},/area)
+"b" = (/MapTools/Turfs/Floor{tag = "icon-floorboards 2"; icon_state = "floorboards 2"},/area)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

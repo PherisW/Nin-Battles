@@ -14,6 +14,21 @@
 
 // BEGIN_FILE_DIR
 #define FILE_DIR .
+#define FILE_DIR "Audio"
+#define FILE_DIR "Audio/Background Music"
+#define FILE_DIR "Audio/Sound Effects"
+#define FILE_DIR "Graphics"
+#define FILE_DIR "Graphics/Artwork"
+#define FILE_DIR "Graphics/Icon Library"
+#define FILE_DIR "Graphics/Icon Library/Buildings"
+#define FILE_DIR "Graphics/Icon Library/Buildings/Kirigakure"
+#define FILE_DIR "Graphics/Icon Library/Buildings/Konohagakure"
+#define FILE_DIR "Graphics/Icon Library/Buildings/Konohagakure/LeafGate"
+#define FILE_DIR "Graphics/Icon Library/Buildings/Sunagakure"
+#define FILE_DIR "Graphics/Icon Library/Items"
+#define FILE_DIR "Graphics/Icon Library/Misc"
+#define FILE_DIR "Graphics/Icon Library/New"
+#define FILE_DIR "Graphics/Icon Library/NPC"
 #define FILE_DIR "icons"
 #define FILE_DIR "icons/hair"
 #define FILE_DIR "icons/Huds"
@@ -97,6 +112,8 @@
 #define FILE_DIR "images/login/Rules"
 #define FILE_DIR "images/OldLeaf Gate"
 #define FILE_DIR "images/WIP"
+#define FILE_DIR "Maps"
+#define FILE_DIR "Maps/Map Icons"
 #define FILE_DIR "Programming"
 #define FILE_DIR "Programming/Assets"
 #define FILE_DIR "Programming/chat from Clan Destined"
@@ -108,7 +125,9 @@
 // END_PREFERENCES
 
 // BEGIN_INCLUDE
-#include "testing.dmf"
+#include "Maps\Main.dmm"
+#include "Maps\World.dmm"
+#include "Maps\Extra\Intro Map.dmm"
 #include "Programming\Resources.dm"
 #include "Programming\Targeting System.dm"
 #include "Programming\Assets\ControlSchemes.dm"
@@ -164,5 +183,6 @@
 #include "Programming\Mechanics\Clothing.dm"
 #include "Programming\Mechanics\Natures.dm"
 #include "Programming\Mechanics\Weapons.dm"
+#include "Skins\testing.dmf"
 // END_INCLUDE
 

@@ -1,0 +1,90 @@
+"a" = (/Turfs/grass{tag = "icon-0,0"; icon_state = "0,0"},/area)
+"b" = (/Turfs/Water,/Turfs/grass{tag = "icon-1,0"; icon_state = "1,0"},/area)
+"c" = (/Turfs/Water,/Turfs/grass{tag = "icon-2,1"; icon_state = "2,1"},/area)
+"d" = (/Turfs/Water,/Turfs/grass{tag = "icon-gass"; icon_state = "gass"},/area)
+"e" = (/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/area)
+"f" = (/Turfs/Water,/Turfs/grass{tag = "icon-1,2"; icon_state = "1,2"},/area)
+"g" = (/Turfs/Water,/Turfs/grass{tag = "icon-2,2"; icon_state = "2,2"},/area)
+"h" = (/Objects/Misc/Fence_Log{tag = "icon-logfence left corner up"; icon_state = "logfence left corner up"},/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/area)
+"i" = (/Objects/Misc/Fence_Log{tag = "icon-logfence right corner up"; icon_state = "logfence right corner up"},/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/area)
+"j" = (/Objects/Misc/Fence_Log{tag = "icon-logfence left corner"; icon_state = "logfence left corner"},/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/area)
+"k" = (/Objects/Misc/Fence_Log{tag = "icon-logfence middle"; icon_state = "logfence middle"},/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/area)
+"l" = (/Objects/Misc/Fence_Log{tag = "icon-logfence right corner"; icon_state = "logfence right corner"},/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/area)
+"m" = (/Turfs/Water,/Turfs/grass{tag = "icon-0,1"; icon_state = "0,1"},/area)
+"n" = (/Turfs/grass{tag = "icon-0,2"; icon_state = "0,2"},/area)
+"o" = (/Turfs/Water,/Turfs/grass{tag = "icon-grass"; icon_state = "grass"},/area)
+"p" = (/Turfs/Water,/Turfs/grass{tag = "icon-2,0"; icon_state = "2,0"},/area)
+"q" = (/Turfs/Water,/Turfs/Sand{tag = "icon-0,2"; icon_state = "0,2"},/area)
+"r" = (/Turfs/Water,/Turfs/Sand{tag = "icon-1,2"; icon_state = "1,2"},/area)
+"s" = (/Turfs/Water,/Turfs/Sand{tag = "icon-2,2"; icon_state = "2,2"},/area)
+"t" = (/Turfs/Water,/Turfs/Sand{tag = "icon-0,1"; icon_state = "0,1"},/area)
+"u" = (/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/Turfs/grass{tag = "icon-gass"; icon_state = "gass"},/area)
+"v" = (/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/Turfs/grass{tag = "icon-1,2"; icon_state = "1,2"},/area)
+"w" = (/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/Turfs/grass{tag = "icon-2,2"; icon_state = "2,2"},/area)
+"x" = (/Turfs/Water,/Turfs/Sand{tag = "icon-2,1"; icon_state = "2,1"},/area)
+"y" = (/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/Turfs/grass{tag = "icon-0,1"; icon_state = "0,1"},/area)
+"z" = (/Turfs/grass,/area)
+"A" = (/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/Turfs/grass{tag = "icon-2,1"; icon_state = "2,1"},/area)
+"B" = (/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/Turfs/grass{tag = "icon-grass"; icon_state = "grass"},/area)
+"C" = (/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/Turfs/grass{tag = "icon-1,0"; icon_state = "1,0"},/area)
+"D" = (/Turfs/Sand{tag = "icon-1,1"; icon_state = "1,1"},/Turfs/grass{tag = "icon-2,0"; icon_state = "2,0"},/area)
+"E" = (/Turfs/Water,/Turfs/Sand{tag = "icon-0,0"; icon_state = "0,0"},/area)
+"F" = (/Turfs/Water,/Turfs/Sand{tag = "icon-1,0"; icon_state = "1,0"},/area)
+"G" = (/Turfs/Water,/Turfs/Sand{tag = "icon-2,0"; icon_state = "2,0"},/area)
+"O" = (/Turfs/Water,/area)
+
+(1,1,1) = {"
+eeeeeeeeeeeeeeeeeeeeeeeee
+eejkkkkkkkkkkkkkkkkkkleee
+eeheeeeeeeeeeeeeeeeeeieee
+eeheeeeeeeeeeeeeeeeeeieee
+eeheeeeeeeeeeeeeeeeeeieee
+eeheeeeeeeeeeeeeeeeeeieee
+eeheeeeeeeeeeeeeeeeeeieee
+eeheeeeeeeeeeeeeeeeeeieee
+eeheeeeeeeeeeeeeeeeeeieee
+eeheeeeeeeeeeeeeeeeeeieee
+eeheeeeeeeeeeeeeeeeeeieee
+eeheeeeeeeeeeeeeeeeeeieee
+eeheeeeeeeeeeeeeeeeeeieee
+eeheeeeeeeeeeeeeeeeeeieee
+eeheeeeeeeeeeeeeeeeeeieee
+eeheeeeeeeeeeeeeeeeeeieee
+eeheeeeeeeeeeeeeeeeeeieee
+eeheeeeeeeeeeeeeeeeeeieee
+eeheeeeeeeeeeeeeeeeeeieee
+eeheeeeeeeeeeeeeeeeeeieee
+eeheeeeeeeeeeeeeeeeeeieee
+eeheeeeeeeeeeeeeeeeeeieee
+eeheeeeeeeeeeeeeeeeeeieee
+eejkkkkkkkkkkkkkkkkkkleee
+eeeeeeeeeeeeeeeeeeeeeeeee
+"}
+
+(1,1,2) = {"
+abbbbbbbbbbbbbbbbbbbbbbba
+cdfgOOOOOOOOOOOOOOOOOdfgm
+cmncOOOOOOOOOOOOOOOOOmncm
+cobpOOOOOOOOOOOOOOOOOobpm
+cOOOOOOOOOOOOOOOOOOOOOOOm
+cOOOOOOOOOOOOOOOOOOOOOOOm
+cOOOOOOOOOOOOOOOOOOOOOOOm
+cOOOOOOOOqrrrrrrsOOOOOOOm
+cOOOOOOOOtuvvvvwxOOOOOOOm
+cOOOOOOOOtyzzzzAxOOOOOOOm
+cOOOOOOOOtyzzzzAxOOOOOOOm
+cOOOOOOOOtyzzzzAxOOOOOOOm
+cOOOOOOOOtyzzzzAxOOOOOOOm
+cOOOOOOOOtBCCCCDxOOOOOOOm
+cOOOOOOOOEFFFFFFGOOOOOOOm
+cOOOOOOOOOOOOOOOOOOOOOOOm
+cOOOOOOOOOOOOOOOOOOOOOOOm
+cOOOOOOOOOOOOOOOOOOOOOOOm
+cOOOOOOOOOOOOOOOOOOOOOOOm
+cOOOOOOOOOOOOOOOOOOOOOOOm
+cOOOOOOOOOOOOOOOOOOOOOOOm
+cdfgOOOOOOOOOOOOOOOOOdfgm
+cmncOOOOOOOOOOOOOOOOOmncm
+cobpOOOOOOOOOOOOOOOOOobpm
+afffffffffffffffffffffffa
+"}

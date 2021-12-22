@@ -1,8 +1,8 @@
 // BEGIN_INTERNALS
 /*
 MAP_ZOOM: 0.500
-LAST_COMPILE_TIME: 1638389149
-DIR: Programming Programming\Assets Programming\Assets\Library Programming\Assets\Library\keyboard Programming\Assets\Library\Pixelmovement Programming\Elemental Jutsus Programming\Global Programming\Mechanics 
+LAST_COMPILE_TIME: 1639164190
+DIR: Graphics Graphics\Artwork icons icons\Huds icons\Updated Maps Maps\backup Maps\backup\backup Maps\Extra Programming Programming\Assets Programming\Assets\Library Programming\Assets\Library\keyboard 
 PACKAGE_RSC_NAME: C:\Users\Brandon\Desktop\Project_Nindo_rsc.zip
 AUTO_FILE_DIR: ON
 PACKAGE_DMB_INFO: ProjectNindo.db
@@ -11,9 +11,9 @@ PACKAGE_DME_NAME: C:\Users\Brandon\Documents\DesktopNindo_src.zip
 LAST_COMPILE_VERSION: 513.1542
 PACKAGE_TYPE: 1
 PACKAGE_DME_START: 
-WINDOW: Programming\Elemental Jutsus\Doton.dm;Programming\Elemental Jutsus\Suiton.dm;Programming\Global\World Settings.dm;Programming\Assets\Intro Map.dm;Programming\Mechanics\Clothing.dm;Programming\Global\Absolute Postitions.dm;Programming\Global\Procs.dm;1080testing.dmf
+WINDOW: icons\Huds\EXP hud.dmi;icons\Updated\Log.dmi;Graphics\Target.dmi;Graphics\TargetBars.dmi;Graphics\BlankBorder.dmi;Graphics\Piece.dmi;Graphics\chatimg.dmi;Graphics\Artwork\NewSkillbar.dmi;Programming\Assets\Map Objects.dm;Programming\Resources.dm
 PACKAGE_DME_INFO: ProjectNindo.db
-FILE: 1080testing.dmf
+FILE: Programming\Assets\Map Objects.dm
 PACKAGE_DMB_NAME: C:\Users\Brandon\Desktop\NindoHost.zip
 PACKAGE_DME_DEMO: 
 */
