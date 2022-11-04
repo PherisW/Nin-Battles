@@ -6,7 +6,7 @@ Uchiha
 		Skill_Name = "Sharingan"
 		//Power=40
 		icon_state = "Sharingan"
-		Description="Acetivate your special eye abilites"
+		Description="Activate your special eye abilites"
 		Rank = "C"
 		UsesNeeded = 30
 		Chakra_Control_Trigger=0
