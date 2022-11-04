@@ -66,15 +66,16 @@ Player/proc/Start()
 		if("Leaf")
 			src.HudAdd()
 			src << sound('Leaf Village Overworld Music.ogg',1,0,1,40)
-			src.loc = locate(68,2,8);src.interior=0//LEAF GATE
-			src.AddSkill("Clone")
-			src.AddSkill("Sharingan")
-			src.AddSkill("Phoenix Flower")
-			src.AddSkill("Rotation")
-			src.AddSkill("Gunshot")
-			src.AddSkill("Taigan")
-			src.AddSkill("Water Clone")
-			src.weathereffect="rain"
+			if(_testing)
+				src.loc = locate(68,2,8);src.interior=0//LEAF GATE
+				src.AddSkill("Clone")
+				src.AddSkill("Sharingan")
+				src.AddSkill("Phoenix Flower")
+				src.AddSkill("Rotation")
+				src.AddSkill("Gunshot")
+				src.AddSkill("Taigan")
+				src.AddSkill("Water Clone")
+				src.weathereffect="rain"
 			/*var/Uchiha_Skills/Sharingan/Shar = new("Sharingan",1)
 			src.HotKeys[1] = Shar
 			src.Skillset[1] = Shar
@@ -96,25 +97,27 @@ Player/proc/Start()
 			src << sound('Sand Academy.ogg',1,0,1,40)
 			src << sound('Ambience_Location_Interior_Big_Room.ogg',1,0,2,20)
 			src.loc = locate(19,17,1)//SAND ACAD (Normal for Sand)
-			src.AddSkill("Sand Control")
-			src.AddSkill("Sand Flight")
-			src.AddSkill("Sand Dome")
-			src.weathereffect="sandstorm"
-			src.AddSkill("Clone")
-			for(var/Hud_Object/Vill_Pic/F in src.client.screen)
-				F.icon = 'SandHUD.dmi'
-			src.GiveItems("Suna Flak Jacket","Sandals","Suna Robes","Baggy Pants")
+			if(_testing)
+				src.AddSkill("Sand Control")
+				src.AddSkill("Sand Flight")
+				src.AddSkill("Sand Dome")
+				src.weathereffect="sandstorm"
+				src.AddSkill("Clone")
+				for(var/Hud_Object/Vill_Pic/F in src.client.screen)
+					F.icon = 'SandHUD.dmi'
+				src.GiveItems("Suna Flak Jacket","Sandals","Suna Robes","Baggy Pants")
 			//src.ActiveQuest[1] = "Talk to the Headmaster"
 		if("Mist")
 			src.HudAdd()
 			src << sound('Mist Village Overworld.ogg',1,0,1,40)
 			src.loc = locate(55,30,9);src.interior=0//MIST SPAWN
-			src.weathereffect="medium fog"
-			src.AddSkill("Water Clone")
-			src.AddSkill("Clone")
-			src.AddSkill("Taigan")
-			src.AddSkill("Gunshot")
-			src.AddSkill("Rotation")
+			if(_testing)
+				src.weathereffect="medium fog"
+				src.AddSkill("Water Clone")
+				src.AddSkill("Clone")
+				src.AddSkill("Taigan")
+				src.AddSkill("Gunshot")
+				src.AddSkill("Rotation")
 			/*var/General_Skills/Clone/D = new("Clone Tech",1)
 			D._hotkey=1
 			src.Skillset.Add(D)

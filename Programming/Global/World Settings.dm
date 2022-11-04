@@ -21,6 +21,7 @@ proc
 		return 1
 var
 	world_connect=0
+	_testing=1
 world
 	fps = 40 // 25 frames per second
 	icon_size = 32 // 32x32 icon size by default
