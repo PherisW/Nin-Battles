@@ -2,19 +2,19 @@
 /*
 MAP_ZOOM: 0.500
 LAST_COMPILE_TIME: 1638389149
-DIR: Programming Programming\Assets Programming\Assets\Library Programming\Assets\Library\keyboard Programming\Assets\Library\Pixelmovement Programming\Elemental Jutsus Programming\Global Programming\Mechanics 
 PACKAGE_RSC_NAME: C:\Users\Brandon\Desktop\Project_Nindo_rsc.zip
+DIR: Programming Programming\Assets Programming\Assets\Library Programming\Assets\Library\keyboard Programming\Assets\Library\Pixelmovement Programming\Elemental Jutsus Programming\Global Programming\Mechanics 
 AUTO_FILE_DIR: ON
 PACKAGE_DMB_INFO: ProjectNindo.db
 MAP_ICON_TYPE: 0
 PACKAGE_DME_NAME: C:\Users\Brandon\Documents\DesktopNindo_src.zip
 LAST_COMPILE_VERSION: 513.1542
-PACKAGE_TYPE: 1
 PACKAGE_DME_START: 
-WINDOW: Programming\Elemental Jutsus\Doton.dm;Programming\Elemental Jutsus\Suiton.dm;Programming\Global\World Settings.dm;Programming\Assets\Intro Map.dm;Programming\Mechanics\Clothing.dm;Programming\Global\Absolute Postitions.dm;Programming\Global\Procs.dm;1080testing.dmf
+PACKAGE_TYPE: 1
 PACKAGE_DME_INFO: ProjectNindo.db
-FILE: 1080testing.dmf
-PACKAGE_DMB_NAME: C:\Users\Brandon\Desktop\NindoHost.zip
+WINDOW: Programming\Elemental Jutsus\Doton.dm;Programming\Elemental Jutsus\Suiton.dm;Programming\Global\World Settings.dm;Programming\Assets\Intro Map.dm;Programming\Mechanics\Clothing.dm;Programming\Global\Absolute Postitions.dm;Programming\Global\Procs.dm;1080testing.dmf;Programming\Assets\Hud.dm
+FILE: Programming\Assets\Hud.dm
 PACKAGE_DME_DEMO: 
+PACKAGE_DMB_NAME: C:\Users\Brandon\Desktop\NindoHost.zip
 */
 // END_INTERNALS

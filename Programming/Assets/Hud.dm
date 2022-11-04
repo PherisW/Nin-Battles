@@ -126,7 +126,7 @@ Player/proc
 
 mob
 	proc
-		animateRay(var/ray="Sun")
+		//animateRay(/ray="Sun")
 
 		LightingEffect(day=1)
 			switch(day)

@@ -1,6 +1,6 @@
 Player
 	proc
-		ai(var/passive=1)
+		ai(var/passive=1) //default to have every NPC set to 
 			if(Target)
 				if(passive)
 					passive=0
