@@ -14,7 +14,6 @@ Uchiha
 		Drain = 20
 		Cooldown = 5
 		Seals_Needed=0
-		var
 /*	Skill_Template
 		Stat_Usage = "ninjutsu"
 		Skill_Name = "Name of justsu"
