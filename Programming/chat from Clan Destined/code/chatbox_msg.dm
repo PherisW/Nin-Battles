@@ -12,7 +12,7 @@ chatbox_msg
 
 		_parse(text)
 			text = "[text]"||" "
-			if(lentext(text)>1 && copytext(text,-2)=="\c")
+			if(length(text)>1 && copytext(text,-2)=="\c")
 				text = copytext(text,1,-2)
 			return text
 

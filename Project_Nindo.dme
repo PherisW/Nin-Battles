@@ -19,13 +19,19 @@
 #define FILE_DIR "Audio/Sound Effects"
 #define FILE_DIR "Graphics"
 #define FILE_DIR "Graphics/Artwork"
+#define FILE_DIR "Graphics/FacePic"
 #define FILE_DIR "Graphics/Icon Library"
 #define FILE_DIR "Graphics/Icon Library/Buildings"
 #define FILE_DIR "Graphics/Icon Library/Buildings/Kirigakure"
 #define FILE_DIR "Graphics/Icon Library/Buildings/Konohagakure"
 #define FILE_DIR "Graphics/Icon Library/Buildings/Konohagakure/LeafGate"
 #define FILE_DIR "Graphics/Icon Library/Buildings/Sunagakure"
+#define FILE_DIR "Graphics/Icon Library/Hair"
 #define FILE_DIR "Graphics/Icon Library/Items"
+#define FILE_DIR "Graphics/Icon Library/Items/Clothing"
+#define FILE_DIR "Graphics/Icon Library/Items/Clothing/Headbands"
+#define FILE_DIR "Graphics/Icon Library/Items/Weapons"
+#define FILE_DIR "Graphics/Icon Library/Jutsu"
 #define FILE_DIR "Graphics/Icon Library/Misc"
 #define FILE_DIR "Graphics/Icon Library/New"
 #define FILE_DIR "Graphics/Icon Library/NPC"
@@ -122,18 +128,20 @@
 // END_FILE_DIR
 
 // BEGIN_PREFERENCES
+#define DEBUG
 // END_PREFERENCES
 
 // BEGIN_INCLUDE
-#include "1080testing.dmf"
-#include "Maps\_MainWorld copy.dmm"
 #include "Maps\Main.dmm"
+#include "Maps\Testmap.dmm"
 #include "Programming\Resources.dm"
 #include "Programming\Targeting System.dm"
 #include "Programming\Assets\ControlSchemes.dm"
 #include "Programming\Assets\HUD&Macros.dm"
 #include "Programming\Assets\Hud.dm"
 #include "Programming\Assets\Intro Map.dm"
+#include "Programming\Assets\Map Objects.dm"
+#include "Programming\Assets\Map Objects2.dm"
 #include "Programming\Assets\NewChat.dm"
 #include "Programming\Assets\Library\keyboard\keyboard.dm"
 #include "Programming\Assets\Library\keyboard\text.dm"
@@ -185,5 +193,6 @@
 #include "Programming\Mechanics\Clothing.dm"
 #include "Programming\Mechanics\Natures.dm"
 #include "Programming\Mechanics\Weapons.dm"
+#include "Skins\testing.dmf"
 // END_INCLUDE
 

@@ -1,19 +1,22 @@
 // BEGIN_INTERNALS
 /*
 MAP_ZOOM: 0.500
-LAST_COMPILE_TIME: 1667840809
-DIR: Maps Maps\backup Maps\backup\backup Programming Programming\Assets Programming\Assets\Library Programming\Assets\Library\keyboard Programming\Assets\Library\Pixelmovement Programming\Clan Programming\Elemental Jutsus Programming\Global Programming\Mechanics 
+MAP_PLANE_MASTERS: 
+LAST_COMPILE_TIME: 1721094729
 PACKAGE_RSC_NAME: C:\Users\Brandon\Desktop\Project_Nindo_rsc.zip
+DIR: Graphics Graphics\Artwork icons\player icons\war icons\Weather Maps\backup Maps\backup\backup Programming Programming\Assets Programming\Assets\Library Programming\Assets\Library\keyboard Programming\Global Skins 
 AUTO_FILE_DIR: ON
 PACKAGE_DMB_INFO: ProjectNindo.db
 MAP_ICON_TYPE: 0
 PACKAGE_DME_NAME: C:\Users\Brandon\Documents\DesktopNindo_src.zip
-LAST_COMPILE_VERSION: 514.1589
-PACKAGE_TYPE: 1
+LAST_COMPILE_VERSION: 513.1490
 PACKAGE_DME_START: 
-WINDOW: Programming\Elemental Jutsus\Doton.dm;Programming\Elemental Jutsus\Suiton.dm;Programming\Global\World Settings.dm;Programming\Assets\Intro Map.dm;Programming\Mechanics\Clothing.dm;Programming\Global\Absolute Postitions.dm;Programming\Global\Procs.dm;Programming\Assets\Item Codes.dm;Programming\Assets\Map Objects.dm
+PACKAGE_TYPE: 1
 PACKAGE_DME_INFO: ProjectNindo.db
-PACKAGE_DMB_NAME: C:\Users\Brandon\Desktop\NindoHost.zip
+WINDOW: Graphics\Thealthunderlay.dmi;Programming\Global\Verbs.dm;Programming\Assets\Intro Map.dm;Programming\Global\Procs.dm;Programming\Global\Quests.dm;Programming\Global\Login.dm;Programming\Assets\ControlSchemes.dm;Programming\Assets\Library\keyboard\keyboard.dm;Programming\Assets\Map Objects.dm;Graphics\Artwork\NewSkillbar.dmi;Project_Nindo.dme;Programming\Assets\Hud.dm;Programming\Assets\HUD&Macros.dm
+FILE: Programming\Global\Procs.dm
+MAP_INSTANCE_MODE: copy
 PACKAGE_DME_DEMO: 
+PACKAGE_DMB_NAME: C:\Users\Brandon\Desktop\NindoHost.zip
 */
 // END_INTERNALS

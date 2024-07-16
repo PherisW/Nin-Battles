@@ -219,6 +219,7 @@ Hud
 			var/sql4dm/SqliteDatabaseConnection/conn = new("ProjectNindo.db")
 			var/sql4dm/ResultSet/createq = conn.Query("SELECT * FROM SkillData WHERE SkillName = '[names]'")
 			while (createq.Next())
+				world.log << "Made it this far"
 				src.Skill_Name =createq.GetString("SkillName")
 				src.icon_state="[Skill_Name]"
 				src.Style=createq.GetString("Style")
@@ -226,21 +227,23 @@ Hud
 				src.Description =createq.GetString("Description")
 				src.Power =createq.GetNumber("Power")
 				src.Rank =createq.GetString("Rank")
+				world.log <<"how close can we get"
 				src.UsesNeeded =createq.GetNumber("UsesNeeded")
 				src.Seals_Needed =createq.GetNumber("Seals Needed")
 				src.Cooldown =createq.GetNumber("Cooldown")
 				src.Chakra_Control_Trigger =createq.GetNumber("Chakra Control Trigger")
 				src.MaxLevel =createq.GetNumber("MaxLevel")
 				src.Drain =createq.GetNumber("Drain")
+				world.log << "Are we there yet?"
 				src.Skill_Category =createq.GetString("Skill Category")
 				src._Triggered =createq.GetNumber("Active Trigger")
 
 
 			var/tmp/alignment = 10+xx
 			var/tmp/iconlist=new/list()
-			//for(var/Hud/Skill/a in typesof(/Hud/Skill))
-				//if(a.Skill_Name == src.Skill_Name)
-					//src = a
+			for(var/Hud/Skill/a in typesof(/Hud/Skill))
+				if(a.Skill_Name == src.Skill_Name)
+					src = a
 			if(xx<=9)
 				screen_loc = "CENTER-4+[xx-1]:[alignment],1+[yy]:5"
 			for(var/i in icon_states(src.icon))

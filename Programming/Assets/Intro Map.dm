@@ -67,7 +67,7 @@ Player/proc/Start()
 			src.HudAdd()
 			src << sound('Leaf Village Overworld Music.ogg',1,0,1,40)
 			if(_testing)
-				src.loc = locate(68,2,8);src.interior=0//LEAF GATE
+				src.loc = locate(84,72,5);src.interior=0//LEAF GATE
 				src.AddSkill("Clone")
 				src.AddSkill("Sharingan")
 				src.AddSkill("Phoenix Flower")
@@ -97,7 +97,7 @@ Player/proc/Start()
 			src << sound('Sand Academy.ogg',1,0,1,40)
 			src << sound('Ambience_Location_Interior_Big_Room.ogg',1,0,2,20)
 			//src.loc = locate(19,17,1)//SAND ACAD (Normal for Sand)
-			src.loc = locate(100,101,1)//Sand Gates
+			src.loc = locate(59,122,3)//Sand Gates
 			if(_testing)
 				src.AddSkill("Sand Control")
 				src.AddSkill("Sand Flight")
@@ -107,11 +107,11 @@ Player/proc/Start()
 				for(var/Hud_Object/Vill_Pic/F in src.client.screen)
 					F.icon = 'SandHUD.dmi'
 				src.GiveItems("Suna Flak Jacket","Sandals","Suna Robes","Baggy Pants")
-			//src.ActiveQuest[1] = "Talk to the Headmaster"
+			src.ActiveQuest[1] = "Start your Journey!"
 		if("Mist")
 			src.HudAdd()
 			src << sound('Mist Village Overworld.ogg',1,0,1,40)
-			src.loc = locate(55,30,9);src.interior=0//MIST SPAWN
+			src.loc = locate(55,30,6);src.interior=0//MIST SPAWN
 			if(_testing)
 				src.weathereffect="medium fog"
 				src.AddSkill("Water Clone")
@@ -177,7 +177,7 @@ Player/proc/Start()
 	src.client.screen+=Weather
 	src.client.screen+=S
 
-	//src.client.screen+=Questlog
+	src.client.screen+=Questlog
 	src.client.screen+=U
 	src.client.screen+=T
 

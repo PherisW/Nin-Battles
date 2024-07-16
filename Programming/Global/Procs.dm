@@ -35,8 +35,11 @@ proc
 				while(Q.Next())
 					//var/SkillType = Q.GetString("SkillType")
 					//var/SkillName = Q.GetString("SkillName")
-					//world.log << SkillType
+					world.log << "database"
+					world.log << Q.GetString("SkillType")
 					var/Hud/Skill/A = new(_name)
+					if(A)
+						world.log << "Skill Gained: [A]"
 					return A
 			//	var/sql4dm/ResultSet/Q = conn.Query("SELECT * FROM ItemList WHERE ItemName = '[_name]'")
 			if("Quest")
@@ -103,6 +106,10 @@ Player
 			src.movement_locked=0
 		AddSkill(var/skillname)
 			var/Hud/Skill/K = Load_Data("Skill",skillname)
+			if (K)
+				world.log << "Skill loaded successfully: [K]"
+			else
+				world.log << "Failed to load skill."
 			//_Skill = new _Skill
 			K.slotnum = length(src.Skillset) +1
 			if(K.slotnum<=9)
@@ -564,7 +571,7 @@ Player
 					if(src.chakra >= _cost)
 						src.chakra -= _cost
 						return 1
-				if("Genjutsu"||"Chakra")
+				if("Genjutsu")
 					if(src.chakra >= _cost)
 						src.chakra -= _cost
 						return 1
@@ -578,8 +585,8 @@ Player
 						src.health -= _cost
 						return 1
 					response = "health"
-			_message(src, , "You do not have enough [response] for this.::[_cost]/[chakra]",,,usr.name_color)
-			return
+			_message(src, , "You do not have enough [response] for this.::[_cost]/[src.chakra]",,,usr.name_color)
+			return 0
 
 		SealCheck(Seals_Needed = 0)
 			if(Seals_Needed)
@@ -692,22 +699,26 @@ proc
 				returnnumber=get+returnnumber
 				digits=0
 		return returnnumber
-	Multi_Hud(var/mob/A,var/Hud/S,wid,high)
-		var/lens = length(icon_states(S.icon))
-		var/iconstates = new/list()
-		var/list/maxy = new/list()
-		for(var/texts in icon_states(S.icon))
-			iconstates+=texts
-		var/loc_check
-		for(var/i=1 to lens)
-			loc_check = splittext(iconstates[i], ",")
-			maxy.Add(text2num(loc_check[2]))
-		for(var/i=1 to lens)
-			loc_check = splittext(iconstates[i], ",")
-			var/Hud/N = new S.type(A,0)
+	Multi_Hud(var/mob/A, var/Hud/S, wid, high)
+		var/icon_states_list = icon_states(S.icon)
+		var/lens = length(icon_states_list)
+		var/list/iconstates = new/list(lens)
+		var/list/max_y_values = new/list(lens)
+		world.log << "Max lens for [S.icon] = [lens]"
+
+		// Collect icon states and corresponding y-values
+		for (var/icon_state in icon_states_list)
+			iconstates += icon_state
+			var/loc_check = splittext(icon_state, ",")
+			max_y_values.Add(text2num(loc_check[2]))
+
+		// Create and position HUD elements
+		for (var/i = 1 to lens)
+			var/loc_check = splittext(iconstates[i], ",")
+			var/Hud/N = new S.type(A, 0)
 			N.icon_state = "[loc_check[1]],[loc_check[2]]"
-			N.screen_loc = "[wid] + [loc_check[1]],[high] +[loc_check[2]]"
-			A.client.screen +=N
+			N.screen_loc = "[wid] + [loc_check[1]],[high] + [loc_check[2]]"
+			A.client.screen += N
 Player
 	var
 		dashdistnormal=3
@@ -844,5 +855,4 @@ atom/proc
 		if(delete)
 			sleep(time)
 			Delete(src)
-
 

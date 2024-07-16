@@ -9,6 +9,9 @@
 
 world
 	tick_lag = 0.25
+	New()
+		log = file("debug.txt")
+		..()
 
 var
 	PixelMovement/PixelMovement = new()

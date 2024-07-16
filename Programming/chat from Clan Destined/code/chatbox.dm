@@ -138,7 +138,7 @@ chatbox
 
 		proc
 			_number(text)
-				for(var/i in 1 to lentext(text))
+				for(var/i in 1 to length(text))
 					switch(text2ascii(text,i))
 						if(48 to 57)
 						else

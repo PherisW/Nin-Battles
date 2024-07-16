@@ -28,12 +28,12 @@ mob//Mob hmmm, let me think...
 
 			var/list/letters=list()//Make a list for later.
 			var/CX//Another variable, for the pixel x.
-			var/OOE=(lentext(text))//A variable so you can center it.
+			var/OOE=(length(text))//A variable so you can center it.
 			if(OOE%2==0)//If you don't know what an if statment is, you probably shouldn't download this.
-				CX+=11-((lentext(text))/2*5)//We do want it centered?
+				CX+=11-((length(text))/2*5)//We do want it centered?
 			else
-				CX+=12-((lentext(text))/2*5)//Right. P.S. Don't fool around with this unless you know exactly what you are doing.
-			for(var/a=1, a<lentext(text)+1, a++)//Cut all of the letters up;
+				CX+=12-((length(text))/2*5)//Right. P.S. Don't fool around with this unless you know exactly what you are doing.
+			for(var/a=1, a<length(text)+1, a++)//Cut all of the letters up;
 				letters+=copytext(text,a,a+1)//And add them to our letters list().
 			for(var/X in letters)//For EVERY character in the letters list();
 				var/Letters/O=new/Letters//Make a new letter obj.
@@ -86,6 +86,7 @@ Objects
 			var/iconstates = new/list()
 			var/list/maxy = new/list()
 			var/list/maxx = new/list()
+			world.log << "Max lens for [S.icon] = [lens]"
 			//S.appearance_flags = PIXEL_SCALE
 			if(!_x)
 				_x = text2num(copytext(S.icon_state,1,2))
@@ -97,6 +98,7 @@ Objects
 
 			for(var/i=1 to lens)
 				loc_check = splittext(iconstates[i], ",")
+				world.log << "([loc_check[1]]),([loc_check[2]])"
 				maxy.Add(text2num(loc_check[2]))
 				maxx.Add(text2num(loc_check[1]))
 
@@ -500,6 +502,8 @@ Non_Player
 				Ticks(40)
 				del(F)*/
 
+
+
 MapTools
 	parent_type = /turf
 	Turfs
@@ -648,7 +652,7 @@ MapTools
 				dir_need=SOUTH
 				connect = /MapTools/Connectors/Sand_Weap/Entrance
 				interiors=0
-Items
+/*Items
 	parent_type = /obj
 	Cross(mob/A)
 		if(istype(A,/Player)&&can_pickup)
@@ -685,6 +689,5 @@ Items
 		icon = 'Chakracard.dmi'
 		Click()
 			AffinityPick(usr)
-
-
+*/
 
